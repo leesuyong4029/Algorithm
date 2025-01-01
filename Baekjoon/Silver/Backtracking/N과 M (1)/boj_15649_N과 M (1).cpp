@@ -12,8 +12,9 @@ void func(int k) {
         cout << '\n';
         return;
     }
+
     for (int i = 1; i <= n; i++) {
-        if (!isused[i]) {
+        if(!isused[i]) {
             arr[k] = i;
             isused[i] = 1;
             func(k + 1);
